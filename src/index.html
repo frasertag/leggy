@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>18th Bday</title>
     <style>
-        /* Import a gothic font from Google Fonts */
-         @import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+        /* Import the Knewave font from Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
 
         body {
-            font-family: 'Matemasie', cursive;
+            font-family: 'Knewave', cursive;
             text-align: center;
-            background: url('https://c4.wallpaperflare.com/wallpaper/158/828/847/fantasy-dark-cemetery-graveyard-wallpaper-preview.jpg') no-repeat center center fixed; 
+            background: url('https://www.example.com/gothic-background.jpg') no-repeat center center fixed; 
             background-size: cover;
             color: #ffffff;
             margin: 0;
             padding: 0;
         }
         .container {
-            padding: 20px;
+            padding: 30px; /* Increased padding for more space */
             background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for better text visibility */
             display: inline-block;
             border-radius: 10px;
@@ -26,25 +26,30 @@
             box-sizing: border-box; /* Includes padding and border in the element's total width and height */
         }
         h1 {
-            color: #7a24b2; /* Adjust this color to fit the gothic theme */
-            font-size: 2em; /* Adjust size for better readability */
+            color: #7a24b2; /* Text color */
+            font-size: 3em; /* Increased font size for the heading */
             margin: 0;
+            text-shadow: 
+                1px 1px 0 #ffffff, 
+                -1px -1px 0 #ffffff,  
+                1px -1px 0 #ffffff,  
+                -1px 1px 0 #ffffff; /* White border effect */
         }
         video {
             max-width: 100%;
             height: auto;
             margin-top: 20px;
-            border: 2px solid #7a24b2; /* Optional: add a border to match the theme */
+            border: 2px solid #ff4500; /* Optional: add a border to match the theme */
             border-radius: 5px; /* Optional: rounded corners for the video player */
         }
 
         /* Mobile Styles */
         @media (max-width: 600px) {
             h1 {
-                font-size: 2.5em; /* Smaller font size on mobile */
+                font-size: 2.5em; /* Larger font size on mobile compared to default */
             }
             .container {
-                padding: 10px; /* Reduced padding on mobile */
+                padding: 15px; /* Adjusted padding for better mobile layout */
                 border-radius: 5px; /* Smaller border radius on mobile */
             }
         }
@@ -52,8 +57,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Happy 18th Birthday </h1>
-        <h1>Leggy Leg Letter</h1>
+        <h1>Happy 18th Birthday Leggy leg letter</h1>
         <video controls>
             <source src="TotallyAwesten.mp4" type="video/mp4">
             Your browser does not support the video tag.
