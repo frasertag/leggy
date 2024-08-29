@@ -5,23 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Birthday Message</title>
     <style>
+        /* Import a gothic font from Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'MedievalSharp', cursive;
             text-align: center;
-            background-color: #f0f8ff;
+            background: url('https://www.example.com/gothic-background.jpg') no-repeat center center fixed; 
+            background-size: cover;
+            color: #ffffff;
             margin: 0;
             padding: 0;
         }
         .container {
             padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for better text visibility */
+            display: inline-block;
+            border-radius: 10px;
+            max-width: 90%; /* Ensure the container doesn't stretch too wide */
+            box-sizing: border-box; /* Includes padding and border in the element's total width and height */
         }
         h1 {
-            color: #ff4500;
+            color: #ff4500; /* Adjust this color to fit the gothic theme */
+            font-size: 2em; /* Adjust size for better readability */
+            margin: 0;
         }
         video {
             max-width: 100%;
             height: auto;
             margin-top: 20px;
+            border: 2px solid #ff4500; /* Optional: add a border to match the theme */
+            border-radius: 5px; /* Optional: rounded corners for the video player */
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em; /* Smaller font size on mobile */
+            }
+            .container {
+                padding: 10px; /* Reduced padding on mobile */
+                border-radius: 5px; /* Smaller border radius on mobile */
+            }
         }
     </style>
 </head>
@@ -34,4 +59,3 @@
         </video>
     </div>
 </body>
-</html>
